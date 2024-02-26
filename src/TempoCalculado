@@ -1,0 +1,46 @@
+public class TempoCalculado {
+    public static void main(String[] args) {
+        vet1000();
+        vet10000();
+        vet100000();
+    }
+    public TempoCalculado(){
+        super();
+    }
+    public static void vet1000(){
+        int[] vet = new int[1000];
+        for (int i = 0; i < vet.length; i++){
+            vet[i] = 0;
+        }
+        double TempoInicial = System.nanoTime();
+        for (int lulu : vet){
+        }
+        double TempoFinal = System.nanoTime();
+        double TempoTotal = (TempoFinal - TempoInicial) / Math.pow(10, 9);
+        System.out.println(TempoTotal);
+    }
+    public static void vet10000(){
+        int[] vet = new int[10000];
+        for (int i = 0; i < vet.length; i++){
+            vet[i] = 0;
+        }
+        double TempoInicial = System.nanoTime();
+        for (int lulu : vet){
+        }
+        double TempoFinal = System.nanoTime();
+        double TempoTotal = (TempoFinal - TempoInicial) / Math.pow(10, 9);
+        System.out.println(TempoTotal);
+    }
+    public static void vet100000(){
+        int[] vet = new int[100000];
+        for (int i = 0; i < vet.length; i++){
+            vet[i] = 0;
+        }
+        double TempoInicial = System.nanoTime();
+        for (int lulu : vet){
+        }
+        double TempoFinal = System.nanoTime();
+        double TempoTotal = (TempoFinal - TempoInicial) / Math.pow(10, 9);
+        System.out.println(TempoTotal);
+    }
+}
